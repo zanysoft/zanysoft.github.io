@@ -9,5 +9,7 @@
   {% endfor %}
 </ul>
 
+```json
 {{ site.github }}
+```
 
