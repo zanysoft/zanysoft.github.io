@@ -5,8 +5,11 @@
 <ul>
   {% for repo in site.github.public_repositories %}
     {% if repo.name != "zanysoft.github.io" and repo.fork == false %}
-      <li><a href="{{ repo.html_url }}">{{ repo.name }}</a>
-        <img src="https://img.shields.io/packagist/dt/zanysoft/{{ repo.name }}?style=social" >
+      <li>
+        <a href="{{ repo.html_url }}" style="margin-right: 30px" >{{ repo.name }}</a>
+        <a href="https://packagist.org/packages/zanysoft/{{ repo.name }}" target="_blank">
+          <img src="https://img.shields.io/packagist/dt/zanysoft/{{ repo.name }}?style=social" >
+        </a>
       </li>
     {% endif %}
   {% endfor %}
