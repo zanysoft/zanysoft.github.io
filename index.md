@@ -1,5 +1,3 @@
-## Welcome to Zanysoft
-
 ### My GitHub Projects
 <ul>
   {% for repo in site.github.public_repositories %}
